@@ -2,11 +2,10 @@
 
 namespace Challenge
 {
-    public interface ICalculateShipping
+    public interface IShippingStrategy
     {
         decimal Calculate(ShippingInfo info);
         int GetDeliveryTime(ShippingInfo info);
         bool IsAvailable(ShippingInfo info);
-        void GetInfo(ShippingInfo info);
     }
 }
